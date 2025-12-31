@@ -1,1 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="IntelliBarriers builds autonomous, AI-powered crowd control barriers that move, interlock, and adapt in real time to improve public safety in high-density venues." />
+  <meta name="theme-color" content="#0b0f14" />
+  <title>IntelliBarriers — Autonomous Crowd Safety Infrastructure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
 
+<body>
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="#top" aria-label="IntelliBarriers Home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">IntelliBarriers</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#product">Product</a>
+        <a href="#how">How it works</a>
+        <a href="#usecases">Use cases</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#contact" class="btn btn--small">Request a demo</a>
+      </nav>
+
+      <button class="nav__burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="mobile" hidden>
+      <div class="container mobile__inner">
+        <a href="#product">Product</a>
+        <a href="#how">How it works</a>
+        <a href="#usecases">Use cases</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#contact" class="btn">Request a demo</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <div class="pill">
+            <span class="dot"></span>
+            Autonomous crowd safety infrastructure
+          </div>
+
+          <h1>
+            Barriers that <span class="accent">move</span>, <span class="accent">interlock</span>,
+            and <span class="accent">adapt</span> in real time.
+          </h1>
+
+          <p class="lead">
+            IntelliBarriers replaces static crowd control with autonomous, AI-powered barrier units designed to reduce
+            congestion risk and improve pedestrian flow in stadiums, events, transport hubs, and smart cities.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#contact">Request a pilot</a>
+            <a class="btn btn--ghost" href="#product">See the system</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="stat__num">Omni-drive</div>
+              <div class="stat__label">Precise sideways movement</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">AI vision</div>
+              <div class="stat__label">Crowd density & flow analysis</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">IB-Lock™</div>
+              <div class="stat__label">Fail-safe mechanical coupling</div>
+            </div>
+          </div>
+
+          <div class="trust">
+            <span class="trust__label">Built for:</span>
+            <span class="trust__tags">
+              Stadium operators · Event security · Airports · Smart city deployments
+            </span>
+          </div>
+        </div>
+
+        <div class="hero__media" aria-label="Product preview">
+          <div class="mediaCard">
+            <div class="mediaCard__top">
+              <div class="mediaBadge">Investor-grade MVP visual</div>
+              <div class="mediaDots" aria-hidden="true"><span></span><span></span><span></span></div>
+            </div>
+
+            <div class="mediaCard__img">
+              <img src="assets/barrier-hero.jpg" alt="IntelliBarriers autonomous crowd barrier render" onerror="this.closest('.mediaCard__img').classList.add('placeholder'); this.remove();" />
+              <div class="placeholderArt" aria-hidden="true">
+                <div class="ph__grid"></div>
+                <div class="ph__block"></div>
+                <div class="ph__glow"></div>
+                <div class="ph__label">Add your barrier render<br><span>assets/barrier-hero.jpg</span></div>
+              </div>
+            </div>
+
+            <div class="mediaCard__bottom">
+              <div class="chip">1.2m × 2.0m industrial monolith</div>
+              <div class="chip">Omnidirectional wheels</div>
+              <div class="chip">Sensor suite (MVP: cameras)</div>
+              <div class="chip">Interlocking couplers (both sides)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="product" class="section">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>Meet the IntelliBarrier unit</h2>
+          <p>
+            Designed as heavy infrastructure — not a gadget. A self-powered, modular barrier that can form rigid walls,
+            create queues, and reconfigure layouts without manual labor.
+          </p>
+        </div>
+
+        <div class="grid3">
+          <article class="card">
+            <h3>Omnidirectional mobility</h3>
+            <p>Omni-wheels enable smooth lateral movement (strafing) for precise positioning in dense environments.</p>
+            <ul class="list">
+              <li>Sideways alignment without turning</li>
+              <li>Controlled movement profiles for safety</li>
+              <li>Obstacle avoidance & positioning sensors</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>AI-powered crowd analysis</h3>
+            <p>High-quality cameras and AI models analyze pedestrian flow and density to flag risk patterns early.</p>
+            <ul class="list">
+              <li>Detect bottlenecks and overcrowding</li>
+              <li>Predict flow direction and surge risk</li>
+              <li>Operator dashboard with alerts</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>IB-Lock™ interlocking system</h3>
+            <p>Motor-assisted mechanical coupling that locks units into rigid wall formations, designed to be fail-safe.</p>
+            <ul class="list">
+              <li>Male/female side coupling for fast alignment</li>
+              <li>No power required to stay locked</li>
+              <li>Manual override for emergencies</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact">
+          <div class="contact__copy">
+            <h2>Request a demo / pilot</h2>
+            <p>
+              If you’re an investor, stadium operator, event security provider, or smart-city stakeholder, we’d love to talk.
+              Share what environment you’re targeting and we’ll respond with the right next steps.
+            </p>
+            <div class="smallNote">
+              This is a v1 website. We’re building fast and improving weekly.
+            </div>
+          </div>
+
+          <div class="contact__form">
+            <form id="leadForm" action="https://formspree.io/f/REPLACE_WITH_YOUR_ID" method="POST">
+              <label>
+                <span>Name</span>
+                <input name="name" type="text" autocomplete="name" required />
+              </label>
+
+              <label>
+                <span>Email</span>
+                <input name="email" type="email" autocomplete="email" required />
+              </label>
+
+              <label>
+                <span>Message</span>
+                <textarea name="message" rows="5" placeholder="Tell us about your use case (venue type, crowd size, location, timeline)..." required></textarea>
+              </label>
+
+              <button class="btn btn--full" type="submit">Send message</button>
+
+              <p class="formNote">
+                Replace the Formspree ID in this form to receive messages.
+              </p>
+
+              <div id="formStatus" class="formStatus" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          <div class="brand brand--footer">
+            <span class="brand__mark" aria-hidden="true"></span>
+            <span class="brand__name">IntelliBarriers</span>
+          </div>
+          <p class="footer__tagline">Autonomous crowd safety infrastructure.</p>
+        </div>
+
+        <div class="footer__meta">
+          <span>© <span id="year"></span> IntelliBarriers</span>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
