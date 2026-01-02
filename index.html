@@ -3,29 +3,39 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="IntelliBarriers builds autonomous, AI-powered crowd control barriers that move, interlock, and adapt in real time to improve public safety in high-density venues." />
-  <meta name="theme-color" content="#0b0f14" />
-  <title>IntelliBarriers — Autonomous Crowd Safety Infrastructure</title>
+  <meta name="description" content="IntelliBarriers is autonomous crowd safety infrastructure engineered for Vision 2030 megaprojects—barriers that move, interlock, and adapt in real time." />
+  <title>IntelliBarriers — Vision 2030 Crowd Safety Infrastructure</title>
+  <meta name="theme-color" content="#0A0D12" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicons (optional: add if you upload these files) -->
+  <!--
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
+  -->
 </head>
 
 <body>
+  <!-- NAV -->
   <header class="nav">
     <div class="container nav__inner">
       <a class="brand" href="#top" aria-label="IntelliBarriers Home">
-        <span class="brand__mark" aria-hidden="true"></span>
-        <span class="brand__name">IntelliBarriers</span>
+        <img class="brand__icon" src="assets/logo-ib.png" alt="" />
+        <img class="brand__wordmark" src="assets/logo-intellibarriers.png" alt="IntelliBarriers" />
       </a>
 
-      <nav class="nav__links" aria-label="Primary">
-        <a href="#product">Product</a>
-        <a href="#how">How it works</a>
+      <nav class="nav__links" aria-label="Primary navigation">
+        <a href="#video">Video</a>
+        <a href="#problem">Why</a>
+        <a href="#tech">Technology</a>
+        <a href="#safety">Safety</a>
         <a href="#usecases">Use cases</a>
-        <a href="#roadmap">Roadmap</a>
-        <a href="#contact" class="btn btn--small">Request a demo</a>
+        <a class="btn btn--small" href="#pilot">Apply for Pilot</a>
       </nav>
 
       <button class="nav__burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
@@ -35,149 +45,340 @@
 
     <div id="mobileMenu" class="mobile" hidden>
       <div class="container mobile__inner">
-        <a href="#product">Product</a>
-        <a href="#how">How it works</a>
+        <a href="#video">Video</a>
+        <a href="#problem">Why</a>
+        <a href="#tech">Technology</a>
+        <a href="#safety">Safety</a>
         <a href="#usecases">Use cases</a>
-        <a href="#roadmap">Roadmap</a>
-        <a href="#contact" class="btn">Request a demo</a>
+        <a class="btn" href="#pilot">Apply for Pilot</a>
       </div>
     </div>
   </header>
 
   <main id="top">
+    <!-- HERO -->
     <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <img src="assets/ksa-bg.jpg" alt="">
+        <div class="hero__overlay"></div>
+      </div>
+
       <div class="container hero__grid">
-        <div class="hero__copy">
-          <div class="pill">
-            <span class="dot"></span>
-            Autonomous crowd safety infrastructure
+        <div class="hero__copy reveal">
+          <div class="eyebrow">
+            <span class="pulse"></span>
+            Engineered for Vision 2030 megaprojects
           </div>
 
           <h1>
-            Barriers that <span class="accent">move</span>, <span class="accent">interlock</span>,
-            and <span class="accent">adapt</span> in real time.
+            Crowd safety infrastructure that
+            <span class="grad">moves</span>, <span class="grad">interlocks</span>,
+            and <span class="grad">adapts</span> in real time.
           </h1>
 
           <p class="lead">
-            IntelliBarriers replaces static crowd control with autonomous, AI-powered barrier units designed to reduce
-            congestion risk and improve pedestrian flow in stadiums, events, transport hubs, and smart cities.
+            IntelliBarriers replaces static crowd fencing with modular autonomous units designed for smart cities and giga-projects.
+            The system detects congestion and proposes movement — an operator approves execution for maximum safety (MVP).
           </p>
 
-          <div class="hero__cta">
-            <a class="btn" href="#contact">Request a pilot</a>
-            <a class="btn btn--ghost" href="#product">See the system</a>
+          <div class="ctaRow">
+            <a class="btn" href="#pilot">Apply for Pilot Program</a>
+            <a class="btn btn--ghost" href="#video">Watch 60s video</a>
           </div>
 
-          <div class="stats">
-            <div class="stat">
-              <div class="stat__num">Omni-drive</div>
-              <div class="stat__label">Precise sideways movement</div>
+          <div class="kpiRow" aria-label="Key points">
+            <div class="kpi">
+              <div class="kpi__top">Semi-autonomous MVP</div>
+              <div class="kpi__sub">Detect → propose → operator approves</div>
             </div>
-            <div class="stat">
-              <div class="stat__num">AI vision</div>
-              <div class="stat__label">Crowd density & flow analysis</div>
+            <div class="kpi">
+              <div class="kpi__top">360° LiDAR + stereo</div>
+              <div class="kpi__sub">Recessed puck + “eyes” vision</div>
             </div>
-            <div class="stat">
-              <div class="stat__num">IB-Lock™</div>
-              <div class="stat__label">Fail-safe mechanical coupling</div>
+            <div class="kpi">
+              <div class="kpi__top">EPM interlock</div>
+              <div class="kpi__sub">Stays locked under power loss</div>
             </div>
           </div>
 
-          <div class="trust">
-            <span class="trust__label">Built for:</span>
-            <span class="trust__tags">
-              Stadium operators · Event security · Airports · Smart city deployments
-            </span>
+          <div class="visionStrip">
+            <span class="muted">Aligned with:</span>
+            <span class="pillTag">NEOM</span>
+            <span class="pillTag">Qiddiya</span>
+            <span class="pillTag">Smart Stadiums</span>
+            <span class="pillTag">Crowd Safety</span>
           </div>
         </div>
 
-        <div class="hero__media" aria-label="Product preview">
-          <div class="mediaCard">
-            <div class="mediaCard__top">
-              <div class="mediaBadge">Investor-grade MVP visual</div>
-              <div class="mediaDots" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="hero__visual reveal">
+          <div class="productCard">
+            <div class="productCard__top">
+              <div class="tag">Enterprise-grade infrastructure</div>
+              <div class="dots" aria-hidden="true"><span></span><span></span><span></span></div>
             </div>
 
-            <div class="mediaCard__img">
-              <img src="assets/barrier-hero.jpg" alt="IntelliBarriers autonomous crowd barrier render" onerror="this.closest('.mediaCard__img').classList.add('placeholder'); this.remove();" />
-              <div class="placeholderArt" aria-hidden="true">
-                <div class="ph__grid"></div>
-                <div class="ph__block"></div>
-                <div class="ph__glow"></div>
-                <div class="ph__label">Add your barrier render<br><span>assets/barrier-hero.jpg</span></div>
-              </div>
+            <div class="productCard__img">
+              <img src="assets/hero-barrier.png" alt="IntelliBarriers autonomous barrier unit render"
+                   onerror="this.closest('.productCard__img').innerHTML='<div class=&quot;phBox&quot;><div class=&quot;phTitle&quot;Add hero render</div><div class=&quot;phSub&quot;assets/hero-barrier.png</div></div>';">
             </div>
 
-            <div class="mediaCard__bottom">
-              <div class="chip">1.2m × 2.0m industrial monolith</div>
-              <div class="chip">Omnidirectional wheels</div>
-              <div class="chip">Sensor suite (MVP: cameras)</div>
-              <div class="chip">Interlocking couplers (both sides)</div>
+            <div class="productCard__bottom">
+              <div class="chip">1.2m height</div>
+              <div class="chip">2.0m width</div>
+              <div class="chip">Mecanum mobility</div>
+              <div class="chip">EPM wall lock</div>
             </div>
+          </div>
+
+          <div class="floatStack" aria-hidden="true">
+            <div class="float">Predict bottlenecks</div>
+            <div class="float">Re-route flow</div>
+            <div class="float">Lock wall formation</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="product" class="section">
+    <!-- BACKED BY (Misk/SEU) -->
+    <section class="backed">
+      <div class="container backed__inner">
+        <div class="backed__label">Backed by / In ecosystem</div>
+
+        <div class="backed__logos">
+          <div class="logoBox">
+            <img src="assets/logo-misk.png" alt="Misk Launchpad"
+                 onerror="this.parentElement.style.display='none';">
+          </div>
+
+          <!-- If you don't have SEU yet, upload assets/logo-seu.png or this box auto-hides -->
+          <div class="logoBox">
+            <img src="assets/logo-seu.png" alt="Saudi Electronic University (SEU)"
+                 onerror="this.parentElement.style.display='none';">
+          </div>
+        </div>
+
+        <div class="backed__note muted">UK tech base · Riyadh commercial focus</div>
+      </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section id="video" class="section">
       <div class="container">
-        <div class="sectionHead">
-          <h2>Meet the IntelliBarrier unit</h2>
+        <div class="sectionHead reveal">
+          <h2>See IntelliBarriers in motion</h2>
           <p>
-            Designed as heavy infrastructure — not a gadget. A self-powered, modular barrier that can form rigid walls,
-            create queues, and reconfigure layouts without manual labor.
+            Motion proves it: Mecanum movement, controlled repositioning, and wall formation behavior.
+            We’re onboarding simulated/video pilots now — progressing to a controlled small live pilot next.
           </p>
         </div>
 
-        <div class="grid3">
-          <article class="card">
-            <h3>Omnidirectional mobility</h3>
-            <p>Omni-wheels enable smooth lateral movement (strafing) for precise positioning in dense environments.</p>
+        <!-- Option A: YouTube/Vimeo embed. Put your embed URL into data-src in script.js or directly in src here. -->
+        <div class="videoCard reveal" id="videoCardEmbed">
+          <div class="videoFrame">
+            <iframe
+              id="videoEmbed"
+              src="about:blank"
+              title="IntelliBarriers explainer video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="videoHint muted">
+            Add your YouTube/Vimeo embed URL in <strong>script.js</strong> (VIDEO_EMBED_URL).
+            Or use the MP4 option below.
+          </div>
+        </div>
+
+        <!-- Option B: Local MP4. Upload assets/ib-explainer.mp4 then uncomment this block.
+        <div class="videoCard reveal" id="videoCardMP4">
+          <video class="videoNative" controls playsinline preload="metadata">
+            <source src="assets/ib-explainer.mp4" type="video/mp4">
+          </video>
+          <div class="videoHint muted">Local video: assets/ib-explainer.mp4</div>
+        </div>
+        -->
+      </div>
+    </section>
+
+    <!-- PROBLEM vs SOLUTION -->
+    <section id="problem" class="section section--alt">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <h2>Static barriers are obsolete</h2>
+          <p>
+            Today’s crowd infrastructure is manual, slow, and blind. Modern cities need systems that can sense and respond.
+          </p>
+        </div>
+
+        <div class="compare reveal">
+          <div class="compare__col">
+            <div class="compare__tag">Static barriers</div>
+            <h3>Manual, rigid, reactive</h3>
             <ul class="list">
-              <li>Sideways alignment without turning</li>
-              <li>Controlled movement profiles for safety</li>
-              <li>Obstacle avoidance & positioning sensors</li>
+              <li>Slow to reconfigure during surges</li>
+              <li>No awareness of density and flow</li>
+              <li>High labour demand at scale</li>
+              <li>Infrastructure that can’t adapt</li>
             </ul>
+          </div>
+
+          <div class="compare__col compare__col--good">
+            <div class="compare__tag">IntelliBarriers</div>
+            <h3>Active infrastructure</h3>
+            <ul class="list">
+              <li>Senses congestion with 360° LiDAR + stereo cameras</li>
+              <li>Proposes repositioning; operator approves execution (MVP)</li>
+              <li>Forms rigid walls using EPM interlocking + alignment guides</li>
+              <li>Engineered for NEOM, Qiddiya, and smart stadium operations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNOLOGY + SPECS -->
+    <section id="tech" class="section">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <h2>Proof of engineering</h2>
+          <p>
+            Not a toy robot. A heavy, modular wall segment designed for real infrastructure constraints.
+          </p>
+        </div>
+
+        <div class="specStrip reveal" aria-label="Specifications">
+          <div class="spec"><div class="spec__k">Height</div><div class="spec__v">1.2m</div></div>
+          <div class="spec"><div class="spec__k">Width</div><div class="spec__v">2.0m</div></div>
+          <div class="spec"><div class="spec__k">Speed</div><div class="spec__v">3–5 km/h</div></div>
+          <div class="spec"><div class="spec__k">Drive</div><div class="spec__v">Mecanum</div></div>
+          <div class="spec"><div class="spec__k">Perception</div><div class="spec__v">360° LiDAR + stereo</div></div>
+          <div class="spec"><div class="spec__k">Interlock</div><div class="spec__v">EPM (power-loss locked)</div></div>
+        </div>
+
+        <div class="grid3 reveal" aria-label="Key technology">
+          <article class="card">
+            <div class="card__top">
+              <div class="card__title">Mecanum mobility</div>
+              <div class="card__badge">Precision</div>
+            </div>
+            <p>Omnidirectional movement enables controlled sideways positioning without turning — ideal for dense concourses.</p>
+            <div class="card__media">
+              <img src="assets/wheels.png" alt="Mecanum wheel close-up"
+                   onerror="this.closest('.card__media').innerHTML='<div class=&quot;phBox&quot;><div class=&quot;phTitle&quot;Add wheel close-up</div><div class=&quot;phSub&quot;assets/wheels.png</div></div>';">
+            </div>
           </article>
 
           <article class="card">
-            <h3>AI-powered crowd analysis</h3>
-            <p>High-quality cameras and AI models analyze pedestrian flow and density to flag risk patterns early.</p>
-            <ul class="list">
-              <li>Detect bottlenecks and overcrowding</li>
-              <li>Predict flow direction and surge risk</li>
-              <li>Operator dashboard with alerts</li>
-            </ul>
+            <div class="card__top">
+              <div class="card__title">Perception stack</div>
+              <div class="card__badge">Awareness</div>
+            </div>
+            <p>Recessed 360° LiDAR puck plus stereo “eyes” support safe navigation, crowd insight, and safety stopping.</p>
+            <div class="card__media">
+              <img src="assets/sensors.png" alt="Sensor suite close-up"
+                   onerror="this.closest('.card__media').innerHTML='<div class=&quot;phBox&quot;><div class=&quot;phTitle&quot;Optional: add sensors image</div><div class=&quot;phSub&quot;assets/sensors.png</div></div>';">
+            </div>
           </article>
 
           <article class="card">
-            <h3>IB-Lock™ interlocking system</h3>
-            <p>Motor-assisted mechanical coupling that locks units into rigid wall formations, designed to be fail-safe.</p>
-            <ul class="list">
-              <li>Male/female side coupling for fast alignment</li>
-              <li>No power required to stay locked</li>
-              <li>Manual override for emergencies</li>
-            </ul>
+            <div class="card__top">
+              <div class="card__title">EPM wall interlock</div>
+              <div class="card__badge">Fail-safe</div>
+            </div>
+            <p>Electro-permanent magnet locking + mechanical alignment guides form continuous rigid walls — locked even on power loss.</p>
+            <div class="card__media">
+              <img src="assets/coupler-epm.png" alt="EPM interlocking close-up"
+                   onerror="this.closest('.card__media').innerHTML='<div class=&quot;phBox&quot;><div class=&quot;phTitle&quot;Optional: add coupler close-up</div><div class=&quot;phSub&quot;assets/coupler-epm.png</div></div>';">
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section">
+    <!-- SAFETY -->
+    <section id="safety" class="section section--alt">
       <div class="container">
-        <div class="contact">
-          <div class="contact__copy">
-            <h2>Request a demo / pilot</h2>
-            <p>
-              If you’re an investor, stadium operator, event security provider, or smart-city stakeholder, we’d love to talk.
-              Share what environment you’re targeting and we’ll respond with the right next steps.
+        <div class="sectionHead reveal">
+          <h2>Safety & redundancy</h2>
+          <p>
+            Crowd safety is zero-tolerance. The platform reduces operational risk through layered safeguards.
+          </p>
+        </div>
+
+        <div class="badgeGrid reveal">
+          <div class="badge">
+            <div class="badge__t">Mechanical fail-safe</div>
+            <div class="badge__s muted">EPM holds lock state without continuous power.</div>
+          </div>
+          <div class="badge">
+            <div class="badge__t">Emergency manual override</div>
+            <div class="badge__s muted">On-device controls and override procedures for operators.</div>
+          </div>
+          <div class="badge">
+            <div class="badge__t">Encrypted communications</div>
+            <div class="badge__s muted">Secure operator control and event logging.</div>
+          </div>
+          <div class="badge">
+            <div class="badge__t">Safe movement constraints</div>
+            <div class="badge__s muted">Walking-pace motion + automatic stop with LiDAR/vision.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- USE CASES -->
+    <section id="usecases" class="section">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <h2>KSA-first deployments</h2>
+          <p>
+            Built for high-density environments where reconfiguration speed, safety, and visibility matter.
+          </p>
+        </div>
+
+        <div class="useGrid reveal">
+          <div class="useCard">
+            <div class="useCard__t">Government & smart cities</div>
+            <div class="useCard__s muted">Adaptive routing and queue control across public infrastructure.</div>
+          </div>
+
+          <div class="useCard">
+            <div class="useCard__t">Vision 2030 giga-projects</div>
+            <div class="useCard__s muted">Aligned with NEOM and Qiddiya’s needs for safe, intelligent public spaces.</div>
+          </div>
+
+          <div class="useCard">
+            <div class="useCard__t">Smart stadiums</div>
+            <div class="useCard__s muted">Ingress/egress optimization, concourse flow, and emergency reconfiguration.</div>
+          </div>
+
+          <div class="useCard">
+            <div class="useCard__t">Pilgrimage crowd safety</div>
+            <div class="useCard__s muted">High-density routing strategies for Hajj/Umrah-scale movement.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PILOT PROGRAM -->
+    <section id="pilot" class="section section--alt">
+      <div class="container">
+        <div class="pilot reveal">
+          <div class="pilot__copy">
+            <h2>Apply for the Pilot Program</h2>
+            <p class="muted">
+              We are onboarding a limited number of KSA partners for a simulated/video pilot now,
+              progressing to a controlled small live pilot as the prototype matures.
             </p>
-            <div class="smallNote">
-              This is a v1 website. We’re building fast and improving weekly.
+
+            <div class="pilot__bullets">
+              <div class="bullet"><span class="dot2"></span>60s explainer + technical brief available</div>
+              <div class="bullet"><span class="dot2"></span>Site assessment: venue layout, crowd patterns, constraints</div>
+              <div class="bullet"><span class="dot2"></span>Operational workflow: operator approval + safety procedures</div>
             </div>
           </div>
 
-          <div class="contact__form">
+          <div class="pilot__form">
             <form id="leadForm" action="https://formspree.io/f/REPLACE_WITH_YOUR_ID" method="POST">
               <label>
                 <span>Name</span>
@@ -190,36 +391,61 @@
               </label>
 
               <label>
-                <span>Message</span>
-                <textarea name="message" rows="5" placeholder="Tell us about your use case (venue type, crowd size, location, timeline)..." required></textarea>
+                <span>Organization</span>
+                <input name="organization" type="text" autocomplete="organization" required />
               </label>
 
-              <button class="btn btn--full" type="submit">Send message</button>
+              <label>
+                <span>Use case</span>
+                <select name="usecase" required>
+                  <option value="" selected disabled>Select one</option>
+                  <option>Government / Smart city</option>
+                  <option>Giga-project (NEOM/Qiddiya)</option>
+                  <option>Stadium / Venue</option>
+                  <option>Pilgrimage / High-density routing</option>
+                  <option>Events / Transport hub</option>
+                  <option>Other</option>
+                </select>
+              </label>
 
-              <p class="formNote">
-                Replace the Formspree ID in this form to receive messages.
-              </p>
+              <label>
+                <span>City</span>
+                <input name="city" type="text" placeholder="Riyadh, Jeddah, etc." required />
+              </label>
+
+              <label>
+                <span>Message</span>
+                <textarea name="message" rows="5" placeholder="Tell us what you’re trying to solve (site, crowd size, timeframe)..." required></textarea>
+              </label>
+
+              <button class="btn btn--full" type="submit">Apply for Pilot</button>
 
               <div id="formStatus" class="formStatus" aria-live="polite"></div>
+              <p class="formNote muted">Replace the Formspree ID in the form action to receive messages.</p>
             </form>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="container footer__inner">
-        <div>
-          <div class="brand brand--footer">
-            <span class="brand__mark" aria-hidden="true"></span>
-            <span class="brand__name">IntelliBarriers</span>
+        <div class="footer__left">
+          <div class="footer__brand">
+            <img class="footer__icon" src="assets/logo-ib.png" alt="" />
+            <img class="footer__wordmark" src="assets/logo-intellibarriers.png" alt="IntelliBarriers" />
           </div>
-          <p class="footer__tagline">Autonomous crowd safety infrastructure.</p>
+          <div class="muted footer__tag">Autonomous crowd safety infrastructure · KSA-focused, global later</div>
         </div>
 
-        <div class="footer__meta">
-          <span>© <span id="year"></span> IntelliBarriers</span>
+        <div class="footer__links">
+          <a href="#video">Video</a>
+          <a href="#tech">Technology</a>
+          <a href="#pilot">Pilot</a>
         </div>
+
+        <div class="muted footer__meta">© <span id="year"></span> IntelliBarriers</div>
       </div>
     </footer>
   </main>
